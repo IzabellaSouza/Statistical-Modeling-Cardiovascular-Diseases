@@ -101,4 +101,17 @@ Estão localizados no diretório `dados`
 ## Progresso
 
 ### Importação e Identificação do Dados
+- Importação bibliotecas e pacotes
+- Caregamento dos dados
+- Entendimento do Problema
 
+### Análise Exploratória e Limpeza dos dados
+- Checagem de registros duplicados
+- Checagem de valores ausentes
+- Criação de Função para visualizar a distribuição de cada variável
+- Criação de Função para calcular a associação entre variáveis categóricas
+- Corrigindo os N/A e Outliers com base em conhecimento de negócio
+- Pré-Processamento dos Dados
+
+### Modelos de Regressão Logística
+- Checagem de registros duplicados
