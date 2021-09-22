@@ -1,5 +1,7 @@
 
-<img src="/Projetos/Statistical-Modeling-Cardiovascular-Diseases/imagen.png”>
+<div align=“center”>
+<img src=“https://user-images.githubusercontent.com/91201232/134407924-2b463c3f-eb8f-4a02-8a74-dce353e04ef5.png” width=“700px” />
+</div>
 
 A Organização Mundial de Saúde estima que 12 milhões de mortes ocorrem em todo o mundo, todos os anos devido a doenças cardíacas. Metade das mortes nos Estados Unidos e em outros países desenvolvidos se deve a doenças cardiovasculares. O prognóstico precoce de doenças cardiovasculares pode ajudar na tomada de decisões sobre mudanças no estilo de vida em pacientes de alto risco e, por sua vez, reduzir as complicações. Esta análise pretende identificar os fatores de risco mais relevantes para doenças cardíacas.
 
