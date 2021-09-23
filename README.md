@@ -119,9 +119,9 @@ Estão localizados no diretório `dados`
 
 ### Modelos de Machine Learning
 - Criação de cinco versões de modelo de Regressão Logística com StatsModels
+- Criação de duas versões de modelo GLM
 - Seleção de Atributos (Feature Selection)
 - Feature Selection: Backward Elimination (P-value Approach)
-- Criação de duas versões de modelo GLM
 
 ### Interpretação e Tradução dos Resultados
 - Extração dos parâmetros e apresentar em formato de tabela
