@@ -9,8 +9,8 @@
 - [Dados](#dados)
 - [Etapas](#etapas)
 - [Progresso](#progresso)
-- [Dependências](#dependencias)
 - [Criador](#criador)
+
 <br>
 
 ## Problema
@@ -96,7 +96,7 @@ Estão localizados no diretório `dados`
 - [x] Modelos de Regressão Logística
 - [x] Interpretação e Tradução dos Resultados
 - [x] Conclusão
-
+- [x] Ferramentas Utilizadas
 
 ## Progresso
 
@@ -113,5 +113,18 @@ Estão localizados no diretório `dados`
 - Corrigindo os N/A e Outliers com base em conhecimento de negócio
 - Pré-Processamento dos Dados
 
-### Modelos de Regressão Logística
-- Checagem de registros duplicados
+### Modelos de Machine Learning
+- Criação de cinco versões de modelo de Regressão Logística com StatsModels
+- Seleção de Atributos (Feature Selection)
+- Feature Selection: Backward Elimination (P-value Approach)
+- Criação de duas versões de modelo GLM
+
+### Interpretação e Tradução dos Resultados
+- Extração dos parâmetros e apresentar em formato de tabela
+- Calcular o exponencial de cada um dos coeficientes para gerar os índices de chances (Odds Ratio)
+
+### Conclusão
+- Mostrar como um aumento ou diminuição de 1 unidade em uma variável afeta as chances de desenvolver a doença.
+
+### Ferramentas Utilizadas
+
