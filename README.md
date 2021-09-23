@@ -90,6 +90,7 @@ Estão localizados no diretório `dados`
 - Variável de destino:
 
   TenYearCHD - Risco de 10 anos de doença cardíaca coronária (CHD - Coronary Heart Disease ) - (binário: "1" significa "Sim", "0" significa "Não")
+<br>
 
 ## Etapas
 
@@ -99,6 +100,7 @@ Estão localizados no diretório `dados`
 - [x] Interpretação e Tradução dos Resultados
 - [x] Conclusão
 - [x] Ferramentas Utilizadas
+<br>
 
 ## Progresso
 
@@ -124,6 +126,7 @@ Estão localizados no diretório `dados`
 ### Interpretação e Tradução dos Resultados
 - Extração dos parâmetros e apresentar em formato de tabela
 - Calcular o exponencial de cada um dos coeficientes para gerar os índices de chances (Odds Ratio)
+<br>
 
 ### Conclusão
 - Mostrar como um aumento ou diminuição de 1 unidade em uma variável afeta as chances de desenvolver a doença.
@@ -140,6 +143,7 @@ Estão localizados no diretório `dados`
 - Matplotlib
 - Tensorflow
 - Statsmodels
+<br>
 
 ## Criador
 
