@@ -128,3 +128,17 @@ Estão localizados no diretório `dados`
 
 ### Ferramentas Utilizadas
 
+- Scipy
+- Numpy
+- SMOTE
+- Pandas
+- Sklearn
+- Seaborn
+- Imblearn
+- Matplotlib
+- Tensorflow
+- Statsmodels
+
+## Criador
+
+Izabella Souza 
