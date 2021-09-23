@@ -33,6 +33,8 @@ https://www.who.int/en/news-room/fact-sheets/detail/cardiovascular-diseases-(cvd
 
 ## Dados
 
+O conjunto de dados fornece as informações dos pacientes. Cada atributo é um fator de risco potencial. Existem fatores de risco demográficos, comportamentais e médicos.
+
 ### Arquivos
 
 Estão localizados no diretório `dados`
