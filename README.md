@@ -97,7 +97,7 @@ Estão localizados no diretório `dados`
 - [x] Importação e Identificação do Dados
 - [x] Análise Exploratória e Limpeza dos dados
 - [x] Modelos de Regressão Logística
-- [x] Interpretação e Tradução dos Resultados
+- [x] Deploy Modelo
 - [x] Conclusão
 - [x] Ferramentas Utilizadas
 <br>
@@ -123,13 +123,91 @@ Estão localizados no diretório `dados`
 - Seleção de Atributos (Feature Selection)
 - Feature Selection: Backward Elimination (P-value Approach)
 
-### Interpretação e Tradução dos Resultados
+### Depoy Modelo
+- Modelo Final
+
+```python
+
+##Versão 5 - Regressão Logística com StatsModels
+
+# Quinta versão do modelo
+
+# Separa X e y
+X = X_final_importance
+y = y_final
+
+# Cria o modelo sem os atributos com maior valor-p
+logit_modelo_v5 = back_feature_elem(X, y, cols_names)
+
+# Print do resultado
+print(logit_modelo_v5.summary())
+
+
+# Confusion Matrix do Modelo
+logit_modelo_v5.pred_table()
+
+# Imprimindo 10 previsões do modelo
+predictions_v5 = logit_modelo_v5.predict()
+print(predictions_v5[0:10])
+
+# Defininido um limite para a classificação
+y_pred_v5 = [0 if x < 0.5 else 1 for x in predictions_v5]
+
+# Relatório de Classificação
+print(classification_report(y, y_pred_v5))
+
+```
+
 - Extração dos parâmetros e apresentar em formato de tabela
+```python
+
+# Print do resultado do modelo_v5 (nossa escolha)
+print(logit_modelo_v5.summary())
+
+
+```
 - Calcular o exponencial de cada um dos coeficientes para gerar os índices de chances (Odds Ratio)
+
+```python
+
+logit_modelo_v5.params
+
+np.exp(logit_modelo_v5.params)
+
+logit_modelo_v5.conf_int()
+np.exp(logit_modelo_v5.conf_int())
+
+logit_modelo_v5.pvalues
+
+# Extrai os parâmetros e intervalos de confiança
+params = np.exp(logit_modelo_v5.params)
+conf = np.exp(logit_modelo_v5.conf_int())
+conf['OR'] = params
+
+# Extra os valores-p
+pvalue = round(logit_modelo_v5.pvalues, 3)
+conf['Valor-p'] = pvalue
+
+# Imprime os resultados
+conf.columns = ['IC 95%(2.5%)', 'IC 95%(97.5%)', 'Odds Ratio', 'Valor-p']
+print((conf))
+
+```
 <br>
 
 ### Conclusão
-- Mostrar como um aumento ou diminuição de 1 unidade em uma variável afeta as chances de desenvolver a doença.
+
+O coeficiente para a idade (age) diz que, mantendo todos os outros constantes, veremos um aumento de 8% nas chances de ser diagnosticado com doença cardíaca em um período de 10 anos, para um aumento de um ano na idade pois:
+
+exp (0.074848) = 1.077721.
+
+Da mesma forma, com cada cigarro extra que se fuma, há um aumento de 3% nas chances de ser diagnosticado com doença cardíaca em um período de 10 anos.
+
+Há um aumento de 1,6% nas chances de ser diagnosticado com doença cardíaca em um período de 10 anos para cada aumento unitário da pressão arterial sistólica.
+
+Há um aumento de 2,2% nas chances de ser diagnosticado com doença cardíaca em um período de 10 anos para cada aumento unitário do índice de massa corporal.
+
+Para o nível total de colesterol e glicose, não há alterações significativas.
 
 ### Ferramentas Utilizadas
 
